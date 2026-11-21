@@ -1,0 +1,36 @@
+
+# Environment and configuration
+.env
+.env.*
+!.env.example
+
+# XAMPP and local configuration
+*.local.php
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary and log files
+*.log
+*.tmp
+*.temp
+*.bak
+*.old
+
+# PHP dependencies (if Composer is added later)
+/vendor/
+
+# Node dependencies (if added later)
+/node_modules/
+
+# Git backup files
+*.orig
+*.rej

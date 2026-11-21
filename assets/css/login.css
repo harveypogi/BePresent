@@ -1,0 +1,222 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f4f6fa;
+    min-height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* LEFT SECTION */
+
+.login-left {
+    width: 50%;
+    background: #142b4a;
+    color: #ffffff;
+    padding: 45px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand h2,
+.mobile-brand h2 {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.brand-icon {
+    width: 42px;
+    height: 42px;
+    background: #4d91f7;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.welcome-content {
+    max-width: 480px;
+}
+
+.welcome-tag {
+    color: #81b5ff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.welcome-content h1 {
+    font-size: 58px;
+    line-height: 1.15;
+    margin: 22px 0;
+}
+
+.welcome-content p {
+    color: #c0ccdc;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 410px;
+}
+
+.login-footer p {
+    color: #a9b8cb;
+    font-size: 12px;
+}
+
+/* RIGHT SECTION */
+
+.login-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.login-form-container {
+    width: 100%;
+    max-width: 420px;
+}
+
+.form-subtitle {
+    color: #4285e9;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.login-form-container h1 {
+    color: #172b46;
+    font-size: 30px;
+    margin: 15px 0 10px;
+}
+
+.form-description {
+    color: #7b8798;
+    font-size: 14px;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+/* FORM */
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    color: #26374d;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #dce2ea;
+    border-radius: 9px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #4285e9;
+    box-shadow: 0 0 0 3px rgba(66, 133, 233, 0.12);
+}
+
+.form-group input::placeholder {
+    color: #a5afbd;
+}
+
+.login-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 9px;
+    background: #347fe5;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.login-button:hover {
+    background: #2468c7;
+}
+
+.error-message {
+    background: #fff0f0;
+    color: #d93636;
+    border: 1px solid #ffd3d3;
+    padding: 13px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.security-note {
+    text-align: center;
+    color: #98a2b1;
+    font-size: 12px;
+    margin-top: 28px;
+    line-height: 1.6;
+}
+
+.mobile-brand {
+    display: none;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .login-left {
+        display: none;
+    }
+
+    .login-right {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .mobile-brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 55px;
+    }
+
+    .login-form-container h1 {
+        font-size: 25px;
+    }
+
+    .welcome-content h1 {
+        font-size: 42px;
+    }
+}
